@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="ht.css">
-    <script>
-            function changesize() {
-    document.getElementsById("nn").style.fontSize="100px";
-}
-function fontemenos(){
-    document.getElementsById("nn").style.fontSize="25px";
-}
-    </script>
+    <title>Aulinha</title>
+<style>
+    p{
+        font-size: 200% ;
+    }
+</style>
 </head>
-<body>
-    <div>
-        
-        <p id="nn">CESINHA</p>
-        <button id="blue" onclick="changesize()" >grande</button>
-        <button id="green" onclick="fontemenos()" >pequeno</button>
+<script>
+    function aumentar(){
+        document.getElementById("des").style.fontSize='300%';
+    }
+    function diminuir(){
+        document.getElementById("des").style.fontSize='100%';
+       
+    }
+    function normal(){
+        document.getElementById("des").style.fontSize='200%';
+       
+    }
 
+</script>
+<body>
+    <div id="des">
+            <p>Cesar</p>
     </div>
+        <button onclick="aumentar()">aumentar</button>
+        <button onclick="normal()">voltar ao tamanho normal</button>
+        <button onclick="diminuir()">diminuir</button>
 </body>
 </html>
