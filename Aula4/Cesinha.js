@@ -26,6 +26,7 @@ app.get("/calcular", (request, response) => {
        else if(operação=="/"){
         resultado = parseFloat(teste) / parseFloat(teste2)
        }
+       
     response.render('result',{resultado})
 })
 app.use((request, response, next) => {
