@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'))
 
 app.get("/", (req, res) => {
-    res.render('index', {title:'Ache aqui!'});
+    res.render('index', {title:'Denúncia Segura'});
 })
 app.get("/obj", (req, res) => {
     res.render('obj',{title:'Objetivos'});

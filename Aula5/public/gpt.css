@@ -1,3 +1,52 @@
 .do{
     color: blue;
 }
+.titl{
+    
+    padding: 25px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: #365477;
+    font-family: Alfa Slab One;
+    line-height: normal;  
+}
+*{
+    box-sizing: border-box;
+}
+body{        
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    float: left;
+    width: 30%;
+    height: 500px;
+    background: #cccccc;
+    padding: 20px;
+  }
+nav ul {
+    list-style-type: none;
+  padding: 0;
+}
+article{
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 500px;
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+footer{
+    background-color:#365477;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+.cansei{
+    text-align:justify;
+}
