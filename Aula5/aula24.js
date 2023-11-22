@@ -9,10 +9,10 @@ app.get("/", (req, res) => {
     res.render('index', {title:'Denúncia Segura'});
 })
 app.get("/obj", (req, res) => {
-    res.render('obj',{title:'Objetivos'});
+    res.render('obj',{title:'Denúncia Segura'});
 })
 app.get("/tec", (req, res) => {
-    res.render('tec',{title:'Procure aqui'});
+    res.render('tec',{title:'Denúncia Segura'});
 })
 
 app.listen(port, () => {

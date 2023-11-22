@@ -9,40 +9,48 @@
     color: white;
     background-color: #365477;
     font-family: Alfa Slab One;
-    line-height: normal;  
-}
+    line-height: normal; 
+  }
 *{
     box-sizing: border-box;
 }
 body{        
     font-family: Arial, Helvetica, sans-serif;
-    /*background-color: #365477;*/
+  
 }
 nav {
     float: left;
     width: 40%;
-    height: 500px;
-    background: #ffffff;
+    height: 622px;
+    background: #365477;
     padding: 20px;
-    margin-right:20% ;
+    margin-right:10% ;
+    margin-left: 5%;
+    border-radius: 50px;
   }
 nav ul {
     list-style-type: none;
   padding: 0;
 }
-.art{
+.acao{
     float: left;
     padding: 15px;
-    width: 30%;
+    width: 40%;
     background-color: #365477;
     height: 300px;
     border-radius: 50px;
-    margin-top: 20px;
-    margin-right: 10%;
+    margin-top: 3px;
+    margin-right: 5%;
 }
-.hh{
-  text-align: center;
+.cpa{
+  margin-left: 18px;
   font-size: 20px;
+  color: #ffffff;
+}
+
+.emch{
+  color: #ffffff;
+  text-align: center;
 }
 section::after {
     content: "";
@@ -57,42 +65,58 @@ footer{
   color: white;
   
 }
-.cansei{
+.oqeud{
     text-align:justify;
 }
+.titu{
+  font-size: 30px;
+  padding: 10px;
+  margin-left: 10%;
+}
+.assu{
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow:#000 1px -1px 2px, #000 -1px 1px 2px, #000 1px 1px 2px, #000 -1px -1px 2px}
+
 
 b{
 padding: 20px;
 }
-b:visited{
+a:visited{
   color: aliceblue;
 
 }
-.bb{
+.but{
 padding: 5px;
-border-radius: 20px;
+border-radius: 30px;
+font-size: 20px;
+text-align: center;
 }
-.cle{
+.ods{
   float: left;
     padding: 20px;
-    width: 10%;
-    border-radius: 30px;
+    width: 20%;
+    border-radius: 30px 0 0 30px;
     background-color: #cccccc;
-    height: 200px;
+    height: 300px;
     margin-top: 20px;
 }
-.kl{
+.texto{
   font-size: 20px;
   border-radius: 20%;
-  
 }
-.pp{
-  float: left;
+.text{
+  font-size: 20px;
+  border-radius: 20%;
+}
+.disq{
+  
+    /*margin-left: 10%;*/
+    float: left;
     padding: 20px;
-    width: 10%;
-    border-radius: 30px;
-    background-color: #ffffff;
-    height: 200px;
+    width: 20%;
+    border-radius: 0 30px 30px 0 ;
+    background-color: #cccccc;
+    height: 300px;
     margin-top: 20px;
-    margin-left: 13%;
 }

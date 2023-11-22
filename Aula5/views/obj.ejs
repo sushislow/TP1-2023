@@ -7,11 +7,26 @@
     <link rel="stylesheet" href="gpt.css">
 </head>
 <body>
-    <h1 class="do"><%=title%></h1>
-    <li>Ajudar os pequenos négocios da cidade a crescer</li>
-    <br>
-    <br>
-    <%-include('back')%>
+    <header class="titl" >
+        <h1><%=title%></h1>
+    </header>
+    <footer>
+        <!--<p>Alunos: Angelo Freitas Paixão, Eduardo da S. Ferreira</p>-->
+    <span>
+        <%-include('back')%>
+    </span>
+
+    <span>
+        <a href="/tec"><b>Email</b></a>
+    </span>
+    <span>
+        <a href="/obj"><b>Chat</b></a>
+    </span >
+    <span>
+        <a href="/obj"><b>Saiba mais</b></a>
+    </span>
+    </footer>
+    
  
 </body>
 </html>
