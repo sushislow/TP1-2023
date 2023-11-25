@@ -34,9 +34,10 @@ nav ul {
 }
 .form{
   float: none;
-  margin-top: 3px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  
   
 }
 .acao{
@@ -126,4 +127,40 @@ text-align: center;
     background-color: #cccccc;
     height: 300px;
     margin-top: 20px;
+}
+.email{
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+.eml{
+
+  width: 80%;
+  height: 25px;
+}
+.den{
+
+  width: 80%;
+  height: 80px;
+}
+.dig{
+  text-align: center;
+width: 342px;
+height: 48px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+
+color: #FFF;
+font-family: Alfa Slab One;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.resulta{
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  font-family: Alfa Slab One;
 }

@@ -13,28 +13,27 @@ app.get("/", (req, res) => {
 app.get("/obj", (req, res) => {
     res.render('obj', {title:'Denúncia Segura'});
 })
-app.get("/email", (req, res) => {
-    res.render('email', {title:'Denúncia Segura'});
+app.get("/chat", (req, res) => {
+    result=''
+    res.render('chat');
 })
 app.get("/email", (req, res) => {
-    res.render("email"); 
-    res.render('email', {title:'Denúncia Segura'});
     resultado = ''
-    res.render('email', { resultado });
-    
+    res.render('email');
 })
 app.post('/salvar', (req, res) => {
     let emailNoForm = req.body.email
-    let cadastro = { email: emailNoForm }
+    let denNoForm = req.body.denuncia
+    let apelNoForm = req.body.apelido
+    let denuNoForm = req.body.denu
+    let cadastro = { email: emailNoForm, denuncia: denNoForm, apelido: apelNoForm, denu: denuNoForm }
     //console.log(cadastro);
     //console.log('\n'+JSON.stringify(cadastro+','))
     fs.appendFileSync('Denuncias.json', `\n  ${JSON.stringify(cadastro)}`)
-    resultado = `Olá ${emailNoForm}`
-    res.render('email', {title:'Denúncia Segura'});
+    resultado = `Sua denúncia foi salva`
     res.render('email', { resultado });
     
 })
-
 app.listen(port, () => {
     console.log(`Servidor funcionando na porta: ${port}`);
     });

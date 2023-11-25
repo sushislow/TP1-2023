@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="titl" >
-        <h1><%=title%></h1>
+        <h1>Denúncia Segura</h1>
     </header>
     <footer>
         <!--<p>Alunos: Angelo Freitas Paixão, Eduardo da S. Ferreira</p>-->
@@ -20,7 +20,7 @@
         <a href="/email"><b>Email</b></a>
     </span>
     <span>
-        <a href="/obj"><b>Chat</b></a>
+        <a href="/chat"><b>Chat</b></a>
     </span >
     <span>
         <a href="/obj"><b>Saiba mais</b></a>
@@ -30,14 +30,19 @@
         <nav class="form">
 
     <form action="/salvar" method="post" class="email">
-        <label for="email">Seu email:</label>
-        <input type="text" id="email" name="email">
-        <input type="submit" id="Em">
+        <label for="email" class="dig">Seu email:</label > <br><br>
+        <input type="text" class="eml" name="email" required><br> <br>
+        <label for="denuncia" class="dig">Sua denuncia:</label> <br> <br>
+        <input type="text" class="den" name="denuncia" required>
+        <br><br>
+        <input type="submit" id="Em"><br><br>
     </form>
+    <h2 class="resulta"><%=resultado%></h2>
     </nav>
     </section>  
     
-    <%=resultado%> 
+    
+      
     
 </body>
 </html>
