@@ -163,4 +163,5 @@ line-height: normal;
   text-align: center;
   margin-top: 20px;
   font-family: Alfa Slab One;
+  flex-shrink: 0;
 }
