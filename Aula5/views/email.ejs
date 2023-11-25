@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Denúncia</title>
    <link rel="stylesheet" href="gpt.css">
 </head>
 <body>
@@ -26,13 +26,18 @@
         <a href="/obj"><b>Saiba mais</b></a>
     </span>
     </footer>
-    <form action="/salvar" method="post">
-        <label for="">Seu email:</label>
+    <section>
+        <nav class="form">
+
+    <form action="/salvar" method="post" class="email">
+        <label for="email">Seu email:</label>
         <input type="text" id="email" name="email">
-        <input type="submit">
+        <input type="submit" id="Em">
     </form>
+    </nav>
+    </section>  
     
-       <%=resultado%>
+    <%=resultado%> 
     
 </body>
 </html>
