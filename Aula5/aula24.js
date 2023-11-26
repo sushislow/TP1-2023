@@ -31,7 +31,7 @@ app.post('/salvar', (req, res) => {
     //console.log('\n'+JSON.stringify(cadastro+','))
     fs.appendFileSync('Denuncias.json', `\n  ${JSON.stringify(cadastro)}`)
     resultado = `Sua denúncia foi salva`
-    res.render('email', { resultado });
+    res.render('obg', { resultado });
     
 })
 app.listen(port, () => {

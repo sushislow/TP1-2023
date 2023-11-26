@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Denúncia</title>
+   <link rel="stylesheet" href="gpt.css">
 </head>
 <body>
-    <h1><%=resultado%></h1>
+    <header class="titl" >
+        <h1>Denúncia Segura</h1>
+    </header>
+    <footer>
+        <!--<p>Alunos: Angelo Freitas Paixão, Eduardo da S. Ferreira</p>-->
+    <span>
+        <%-include('back')%>
+    </span>
+
+    <span>
+        <a href="/email"><b>Email</b></a>
+    </span>
+    <span>
+        <a href="/chat"><b>Chat</b></a>
+    </span >
+    <span>
+        <a href="/obj"><b>Saiba mais</b></a>
+    </span>
+    </footer>
+    <section>
+        <nav class="form">
+    <h2 class="resulta"><%=resultado%></h2>
+    </nav>
+    </section>  
 </body>
 </html>
