@@ -8,8 +8,8 @@ const fs = require("fs");
 app.set('view engine', 'ejs');
  
 let vetornomes = []
-if (fs.existsSync('nome.json')){
-    const dados = fs.readFileSync('nome.json', 'utf-8')
+if (fs.existsSync('nomes.json')){
+    const dados = fs.readFileSync('nomes.json', 'utf-8')
     console.log(dados);
     vetornomes = JSON.parse(dados)
 }
@@ -24,13 +24,13 @@ app.post("/teste4", (req, res) => {
     console.log(cadastro);
     console.log('\n'+JSON.stringify(cadastro+','))
     vetornomes.push(cadastro)
-    fs.writeFileSync('nome.json', `\n  ${JSON.stringify(vetornomes)}`)
+    fs.writeFileSync('nomes.json', `\n  ${JSON.stringify(vetornomes)}`)
     resultado = `Olá ${cadastro.nome}`
     res.render('result', { resultado });
 })
-app.get('/nomes'), (req,res) => {
-    res.render('nomes', {vetornomes})
-}
+app.get('/mostrar', (req,res) => {
+    res.render('nomes', {vetornomes});
+});
 app.use((req, res, next) => {
     res.status(404).send("<h1>Página não encontrada.</h1>");
 })
