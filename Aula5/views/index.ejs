@@ -7,36 +7,46 @@
     <link rel="stylesheet" href="gpt.css">
 </head>
 <body>
- 
     <header class="titl" >
+        <div>    
         <h1>Denúncia Segura</h1>
+        </div>
     </header>
+
     <div>
-    <footer>
+    <footer class="subl">
         <!--<p>Alunos: Angelo Freitas Paixão, Eduardo da S. Ferreira</p>-->
-    <span>
-        <%-include('back')%>
-    </span>
-    <span>
-        <a href="/email"><b>Email</b></a>
-    </span>
-    <span>
-        <a href="/chat"><b>Chat</b></a>
-    </span >
-    <span>
-        <a href="/obj"><b>Saiba mais</b></a>
-    </span>
+           <ul >
+        <span >
+        <li><%-include('back')%></li>
+
+        <li><a href="/email"><b>Email</b></a></li>
+   
+        <li><a href="/chat"><b>Chat</b></a></li>
+
+       <li><a href="/obj"><b>Saiba mais</b></a></li>
+        </span>
+        </ul>
+    
     </footer>
-</div>
+
+    </div>
+
     <h1 class="titu">O que é uma denúncia?</h1>
     <section>
-        <nav>  
+        <article >  
     <ul class="oqeud">
-       <b class="assu">Para manter a integridade do órgão, o recebimento e o tratamento de denúncias é função importante na detecção de irregularidades ou ato ilícitos. Mas o que é uma denúncia?
-        De acordo com a Portaria MC nº 670, de 13/09/2021, que dispõe sobre a organização do atendimento da Central de Relacionamento, da Ouvidoria, e de Transparência e Acesso à Informação, e norteia as diretrizes para o atendimento das demandas relacionadas à proteção de dados pessoais no âmbito do Ministério da Cidadania, denúncia é ato que indica a prática de irregularidade ou de ilícito cuja solução dependa da atuação dos órgãos apuratórios competentes.</b>
+       <p class="assu">Para manter a integridade do órgão, 
+        o recebimento e o tratamento de denúncias é função 
+        importante na detecção de irregularidades ou ato ilícitos. Mas o que é uma denúncia?
+        De acordo com a Portaria MC nº 670, de 13/09/2021, que dispõe sobre a organização do 
+        atendimento da Central de Relacionamento, da Ouvidoria, e de Transparência e Acesso à 
+        Informação, e norteia as diretrizes para o atendimento das demandas relacionadas à proteção 
+        de dados pessoais no âmbito do Ministério da Cidadania, denúncia é ato que indica a prática de 
+        irregularidade ou de ilícito cuja solução dependa da atuação dos órgãos apuratórios competentes.</p>
     </ul>
-</nav>
-<article class="acao">
+    </article>
+<nav class="acao">
     <h1 class="cpa">Como podemos ajudar?</h1>
     <br>
         <b class="emch">Email:</b>
@@ -44,14 +54,14 @@
         <br><br><br>
         <b class="emch">Chat: </b>
         <a href="/chat"><button class="but">Converse conosco</button></a>
-</article>
-<article class="ods">
-        <b class="texto">O Denúncia Segura oferece o apoio de especialistas para um melhor atendimento.</b>
-</article>
-<article class="disq">
-    <p class="text">- Disque 100 </p>
-    <p class="text">- Ligue 180 </p>
-</article>
+</nav>
+<table class="ods">
+    <tr >
+        <th class="texto">O Denúncia Segura oferece o apoio de especialistas para um melhor atendimento.</th>
+    </tr>
+    <th class="text">- Disque 100 <br><br> - Ligue 180 </th>
+</tr>
+</table>
 </section>
 </body>
 </html>

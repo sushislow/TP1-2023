@@ -8,27 +8,33 @@
 </head>
 <body>
     <header class="titl" >
+        <div>    
         <h1>Denúncia Segura</h1>
+        </div>
     </header>
-    <footer>
+
+    <div class="formulario">
+    <footer class="subl">
         <!--<p>Alunos: Angelo Freitas Paixão, Eduardo da S. Ferreira</p>-->
-    <span>
-        <%-include('back')%>
-    </span>
+        <ul >
+        <span >
+        <li><%-include('back')%></li>
 
-    <span>
-        <a href="/email"><b>Email</b></a>
-    </span>
-    <span>
-        <a href="/chat"><b>Chat</b></a>
-    </span >
-    <span>
-        <a href="/obj"><b>Saiba mais</b></a>
-    </span>
+        <li><a href="/email"><b>Email</b></a></li>
+   
+        <li><a href="/chat"><b>Chat</b></a></li>
+
+       <li><a href="/obj"><b>Saiba mais</b></a></li>
+        </span>
+        </ul>
+    
     </footer>
-    <section>
-        <nav class="form">
 
+    </div>
+</header>
+    <section >
+        
+        <nav class="form">
     <form action="/salvar" method="post" class="email">
         <label for="email" class="dig">Seu email:</label > <br><br>
         <input type="text" class="eml" name="email" required><br> <br>
@@ -38,7 +44,9 @@
         <input type="submit" id="Em"><br><br>
     </form>
     <h2 class="resulta"><%=resultado%></h2>
+
     </nav>
+
     </section>  
     
     

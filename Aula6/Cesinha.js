@@ -14,9 +14,10 @@ if (fs.existsSync('nomes.json')){
     vetornomes = JSON.parse(dados)
 }
 
-app.get("/", (request, response) => {
-    response.render("result"); //views/teste4.ejs
+app.get("/", (req, res) => {
     resultado = ''
+    res.render("result"); //views/teste4.ejs
+    
 });
 app.post("/teste4", (req, res) => {
     let nomeNoForm = req.body.nome
