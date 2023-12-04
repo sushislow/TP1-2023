@@ -40,11 +40,22 @@ article {
     padding: 20px;
     border-radius: 50px;
   }
-
 .form{
   float: left; 
   margin-top: 35px;
   margin-left: 30%;
+}
+@media (max-width: 412px) {
+  .form{
+    width: 70%; 
+    margin-left: 15%;
+  }
+  .oqeud{
+    display: inline-block;
+  }
+  .acao{
+    width: 80%;
+  }
 }
 .formul{
   float: left; 
