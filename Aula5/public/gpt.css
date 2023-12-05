@@ -45,24 +45,16 @@ article {
   margin-top: 35px;
   margin-left: 30%;
 }
-@media (max-width: 412px) {
-  .form{
-    width: 70%; 
-    margin-left: 15%;
-  }
-  .oqeud{
-    display: inline-block;
-  }
-  .acao{
-    width: 80%;
-  }
-}
+
 .formul{
   float: left; 
   margin-top: 50px;
  width: 35%;
  margin-right: 10%;
  margin-left: 5%;
+ overflow-y: scroll;
+ overflow-x: none;
+
 }
 .formula{
   float: left; 
@@ -70,6 +62,8 @@ article {
  width: 35%;
  margin-right: 5%;
  margin-left: 10%;
+ overflow-y: scroll;
+ overflow-x: hidden;
 }
 .acao{
     float: left;
@@ -81,11 +75,14 @@ article {
     margin-top: 3px;
     margin-right: 5%;
 }
+.mud{
+  margin-left:5% ;
+}
 .cpa{
   margin-left: 18px;
   font-size: 20px;
   color: #ffffff;
-  
+  text-align: center;
 }
 
 .emch{
@@ -136,7 +133,7 @@ footer li > a:hover{
 p{
 padding: 10px;
 }
-a:visited{
+li a:visited{
   color:#cccccc;
 
 }
@@ -225,4 +222,45 @@ line-height: normal;
 .titl, footer {
   width: 100%;
 }
+}
+@media (max-width: 1024px) {
+  .form{
+    width: 60%; 
+    margin-left: 20%;
+  }
+  .log{
+    display: inline-block;
+    width: 80%;
+  }
+  .acao{
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+  }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .log,.acao,.ods{
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .assu{
+    position: relative;
+    top: -45px;
+  }
+  .mud{
+    margin-top: -20px;
+  }
+  .cpa{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .ods{
+    width: 80%;
+    margin-top: 20px;
+  }
+
 }

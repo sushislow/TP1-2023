@@ -1,4 +1,4 @@
-const port = 8000;
+const port = 5950;
 //const ip = Object.values(require('os').networkInterfaces()).reduce((r, list) => r.concat(list.reduce((rr, i) => rr.concat(i.family==='IPv4' && !i.internal && i.address || []), [])), [])[0]
 const express = require('express');
 const app = express();
