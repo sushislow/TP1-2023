@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denúncia</title>
-   <link rel="stylesheet" href="gpt.css">
-</head>
-<body>
-    <header class="titl" >
-        <div>    
-        <h1>Denúncia Segura</h1>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Denúncia</title>
+        <link rel="stylesheet" href="gpt.css">
+    </head>
+
+    <body>
+        <header class="titl">
+            <div>
+                <h1>Denúncia Segura</h1>
+            </div>
+        </header>
+
+        <div class="formulario">
+            <footer class="subl">
+                <!--<p>Alunos: Angelo Freitas Paixão, Eduardo da S. Ferreira</p>-->
+                <ul>
+                    <span>
+                        <li><%-include('back')%></li>
+
+                        <li><a href="/email"><b>Email</b></a></li>
+
+                        <li><a href="/chat"><b>Chat</b></a></li>
+
+                        <li><a href="/obj"><b>Saiba mais</b></a></li>
+                    </span>
+                </ul>
+
+            </footer>
+
         </div>
-    </header>
+        <section>
+            <nav class="form" id="universal">
 
-    <div class="formulario">
-    <footer class="subl">
-        <!--<p>Alunos: Angelo Freitas Paixão, Eduardo da S. Ferreira</p>-->
-        <ul >
-        <span >
-        <li><%-include('back')%></li>
+                <form action="/salvar" method="post" class="email">
+                    <label for="apelido" class="dig">Seu apelido:</label> <br><br>
+                    <input type="text" class="eml" name="apelido" required><br> <br>
+                    <label for="denu" class="dig">Sua denuncia:</label> <br> <br>
+                    <input type="text" class="den" name="denu" required>
+                    <br><br>
+                    <input type="submit" id="Em"><br><br>
+                </form>
+            </nav>
+        </section>
+    </body>
 
-        <li><a href="/email"><b>Email</b></a></li>
-   
-        <li><a href="/chat"><b>Chat</b></a></li>
-
-       <li><a href="/obj"><b>Saiba mais</b></a></li>
-        </span>
-        </ul>
-    
-    </footer>
-
-    </div>
-    <section>
-        <nav class="form" id="universal">
-
-    <form action="/salvar" method="post" class="email">
-        <label for="apelido" class="dig">Seu apelido:</label > <br><br>
-        <input type="text" class="eml" name="apelido" required><br> <br>
-        <label for="denu" class="dig">Sua denuncia:</label> <br> <br>
-        <input type="text" class="den" name="denu" required>
-        <br><br>
-        <input type="submit" id="Em"><br><br>
-    </form>
-    </nav>
-    </section>  
+    </html>
 </body>
-</html>
-</body>
+
 </html>

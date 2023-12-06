@@ -7,11 +7,11 @@ app.set('view engine', "ejs");
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 
-let vetornomes = [] 
-if (fs.existsSync('Denuncias.json')){
-   const dados = fs.readFileSync('Denuncias.json', 'utf-8')
-   console.log(dados);
-   vetornomes = JSON.parse(dados)
+let vetornomes = []
+if (fs.existsSync('Denuncias.json')) {
+    const dados = fs.readFileSync('Denuncias.json', 'utf-8')
+    console.log(dados);
+    vetornomes = JSON.parse(dados)
 }
 
 app.get("/", (req, res) => {
@@ -32,21 +32,23 @@ app.post('/salvar', (req, res) => {
     let denNoForm = req.body.denuncia
     let apelNoForm = req.body.apelido
     let denuNoForm = req.body.denu
-    let cadastro = { email: emailNoForm,
-        denuncia: denNoForm, 
-        apelido: apelNoForm, 
-        denu: denuNoForm }
+    let cadastro = {
+        email: emailNoForm,
+        denuncia: denNoForm,
+        apelido: apelNoForm,
+        denu: denuNoForm
+    }
 
     console.log(cadastro)
-    console.log('\n'+JSON.stringify(cadastro+','))
+    console.log('\n' + JSON.stringify(cadastro + ','))
     vetornomes.push(cadastro)
     fs.writeFileSync('Denuncias.json', `\n  ${JSON.stringify(vetornomes)}`)
     resultado = `Sua denúncia foi salva`
     res.render('obg', { resultado });
 })
 app.get('/mostrar', (req, res) => {
-    res.render('nomes', {vetornomes});
+    res.render('nomes', { vetornomes });
 });
 app.listen(port, () => {
     console.log(`Servidor funcionando na porta: ${port}`);
-    });
+});

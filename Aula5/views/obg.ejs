@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denúncia</title>
-   <link rel="stylesheet" href="gpt.css">
+    <link rel="stylesheet" href="gpt.css">
 </head>
+
 <body>
-    <header class="titl" >
-        <div>    
-        <h1>Denúncia Segura</h1>
+    <header class="titl">
+        <div>
+            <h1>Denúncia Segura</h1>
         </div>
     </header>
 
     <div class="formulario">
-    <footer class="subl">
-        <!--<p>Alunos: Angelo Freitas Paixão, Eduardo da S. Ferreira</p>-->
-        <ul >
-        <span >
-        <li><%-include('back')%></li>
+        <footer class="subl">
+            <!--<p>Alunos: Angelo Freitas Paixão, Eduardo da S. Ferreira</p>-->
+            <ul>
+                <span>
+                    <li><%-include('back')%></li>
 
-        <li><a href="/email"><b>Email</b></a></li>
-   
-        <li><a href="/chat"><b>Chat</b></a></li>
+                    <li><a href="/email"><b>Email</b></a></li>
 
-       <li><a href="/obj"><b>Saiba mais</b></a></li>
-        </span>
-        </ul>
-    
-    </footer>
+                    <li><a href="/chat"><b>Chat</b></a></li>
+
+                    <li><a href="/obj"><b>Saiba mais</b></a></li>
+                </span>
+            </ul>
+
+        </footer>
 
     </div>
     <section>
         <nav class="form">
-    <h2 class="resulta"><%=resultado%></h2>
-    </nav>
-    </section>  
+            <h2 class="resulta">
+                <%=resultado%>
+            </h2>
+        </nav>
+    </section>
 </body>
+
 </html>
