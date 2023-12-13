@@ -34,27 +34,18 @@
 
     </div>
     <section>
+        <% for(let i=0; i < vetornomes.length; i++ ) { %>
         <article class="formula">
-            <h2 class="resu">Emails</h2>
-            <ul>
-                <% for(let i=0; i < vetornomes.length; i++ ) { %>
+            <h2 class="resu">Email:</h2>
                     <p class="resulta">
                         <%=vetornomes[i].email%>
                     </p>
-                    <% } %>
-            </ul>
-        </article>
-
-        <article class="formul">
-            <h2 class="resu">Denúncias</h2>
-            <ul>
-                <% for(let i=0; i < vetornomes.length; i++ ) { %>
+            <h2 class="resu">Denúncia:</h2>
                     <p class="resulta">
                         <%=vetornomes[i].denuncia%>
                     </p>
-                    <% } %>
-            </ul>
         </article>
+      <% } %>
     </section>
 </body>
 
